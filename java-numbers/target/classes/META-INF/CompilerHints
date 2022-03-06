@@ -1,0 +1,11 @@
+dontinline,*.*_all_jmhStub
+dontinline,*.*_avgt_jmhStub
+dontinline,*.*_sample_jmhStub
+dontinline,*.*_ss_jmhStub
+dontinline,*.*_thrpt_jmhStub
+inline,com/baeldung/numberofdigits/Benchmarking.divideAndConquer
+inline,com/baeldung/numberofdigits/Benchmarking.dividingWithPowersOf2
+inline,com/baeldung/numberofdigits/Benchmarking.logarithmicApproach
+inline,com/baeldung/numberofdigits/Benchmarking.repeatedMultiplication
+inline,com/baeldung/numberofdigits/Benchmarking.shiftOperators
+inline,com/baeldung/numberofdigits/Benchmarking.stringBasedSolution
