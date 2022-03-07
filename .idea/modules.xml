@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/annotations/annotation-processing/annotation-processing.iml" filepath="$PROJECT_DIR$/annotations/annotation-processing/annotation-processing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/annotations/annotation-user/annotation-user.iml" filepath="$PROJECT_DIR$/annotations/annotation-user/annotation-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/annotations/annotations.iml" filepath="$PROJECT_DIR$/annotations/annotations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-numbers/java-numbers.iml" filepath="$PROJECT_DIR$/java-numbers/java-numbers.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/java_learn.iml" filepath="$PROJECT_DIR$/.idea/java_learn.iml" />
     </modules>
   </component>
