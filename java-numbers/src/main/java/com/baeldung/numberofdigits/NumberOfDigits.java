@@ -57,13 +57,13 @@ public class NumberOfDigits {
         }
         if (number >= 10000) {
             length += 4;
-            number /= 100;
+            number /= 10000;
         }
         if (number >= 100) {
             length += 2;
             number /= 100;
         }
-        if (number > 10) {
+        if (number >= 10) {
             length += 1;
         }
         return length;
@@ -76,7 +76,7 @@ public class NumberOfDigits {
      * @return
      */
     public int divideAndConquer(int number) {
-        if (number < 1000000) {
+        if (number < 100000) {
             if (number < 100) {
                 if (number < 10) {
                     return 1;
