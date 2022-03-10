@@ -12,6 +12,7 @@
         <module>annotations/annotation-processing</module>
         <module>annotations/annotation-user</module>
         <module>java-numbers</module>
+        <module>json-path</module>
     </modules>
 
     <name>parent-modules</name>

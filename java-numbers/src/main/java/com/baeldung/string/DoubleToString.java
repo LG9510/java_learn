@@ -20,6 +20,12 @@ public class DoubleToString {
         return nf.format(d);
     }
 
+    public static String roundWithNumberFormat(double d) {
+        NumberFormat nf = NumberFormat.getInstance();
+        nf.setMaximumFractionDigits(0);
+        return nf.format(d);
+    }
+
     public static String truncateWithDecimalFormat(double d) {
         DecimalFormat df = new DecimalFormat("#,##");
         df.setRoundingMode(RoundingMode.FLOOR);

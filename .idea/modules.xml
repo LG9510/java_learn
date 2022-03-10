@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/annotations/annotations.iml" filepath="$PROJECT_DIR$/annotations/annotations.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-numbers/java-numbers.iml" filepath="$PROJECT_DIR$/java-numbers/java-numbers.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/java_learn.iml" filepath="$PROJECT_DIR$/.idea/java_learn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/json-path/json-path.iml" filepath="$PROJECT_DIR$/json-path/json-path.iml" />
     </modules>
   </component>
 </project>
