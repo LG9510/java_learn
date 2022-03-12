@@ -5,8 +5,13 @@
     <file url="file://$PROJECT_DIR$/annotations/annotation-processing/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/annotations/annotation-user/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/annotations/annotation-user/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/annotations/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/annotations/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java-numbers/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java-numbers/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/json-path/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/json-path/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>
 </project>
