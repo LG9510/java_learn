@@ -13,6 +13,9 @@
         <module>annotations/annotation-user</module>
         <module>java-numbers</module>
         <module>json-path</module>
+        <module>parent-boot-1</module>
+        <module>parent-boot-2</module>
+        <module>spring-aop</module>
     </modules>
 
     <name>parent-modules</name>

@@ -8,6 +8,9 @@
       <module fileurl="file://$PROJECT_DIR$/java-numbers/java-numbers.iml" filepath="$PROJECT_DIR$/java-numbers/java-numbers.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/java_learn.iml" filepath="$PROJECT_DIR$/.idea/java_learn.iml" />
       <module fileurl="file://$PROJECT_DIR$/json-path/json-path.iml" filepath="$PROJECT_DIR$/json-path/json-path.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent-boot-1/parent-boot-1.iml" filepath="$PROJECT_DIR$/parent-boot-1/parent-boot-1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent-boot-2/parent-boot-2.iml" filepath="$PROJECT_DIR$/parent-boot-2/parent-boot-2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-aop/spring-aop.iml" filepath="$PROJECT_DIR$/spring-aop/spring-aop.iml" />
     </modules>
   </component>
 </project>

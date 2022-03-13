@@ -6,10 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="annotation-user" />
         <module name="annotations" />
         <module name="java-numbers" />
         <module name="annotation-processing" />
-        <module name="annotation-user" />
+        <module name="spring-aop" />
         <module name="json-path" />
       </profile>
     </annotationProcessing>
@@ -20,6 +21,9 @@
       <module name="java-numbers" target="1.8" />
       <module name="java_learn" target="1.8" />
       <module name="json-path" target="1.8" />
+      <module name="parent-boot-1" target="1.8" />
+      <module name="parent-boot-2" target="1.8" />
+      <module name="spring-aop" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
