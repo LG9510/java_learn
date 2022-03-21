@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AjcSettings">
+    <option name="cmdLineParams" value="-Xlint:ignore -showWeaveInfo" />
+  </component>
   <component name="CompilerConfiguration">
     <annotationProcessing>
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="annotation-user" />
         <module name="annotations" />
         <module name="java-numbers" />
         <module name="annotation-processing" />
         <module name="spring-aop" />
+        <module name="annotation-user" />
         <module name="json-path" />
       </profile>
     </annotationProcessing>
