@@ -7,17 +7,6 @@
     <groupId>com.baeldung</groupId>
     <artifactId>parent-modules</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <modules>
-        <module>annotations</module>
-        <module>annotations/annotation-processing</module>
-        <module>annotations/annotation-user</module>
-        <module>java-numbers</module>
-        <module>json-path</module>
-        <module>parent-boot-1</module>
-        <module>parent-boot-2</module>
-        <module>spring-aop</module>
-    </modules>
-
     <name>parent-modules</name>
     <packaging>pom</packaging>
 
@@ -155,7 +144,13 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-pmd-plugin</artifactId>
                 <version>${maven-pmd-plugin.version}</version>
-
+                <dependencies>
+                    <dependency>
+                        <groupId>org.baeldung.pmd</groupId>
+                        <artifactId>custom-pmd</artifactId>
+                        <version>${custom-pmd.version}</version>
+                    </dependency>
+                </dependencies>
                 <configuration>
                     <failurePriority>5</failurePriority>
                     <aggregate>false</aggregate>
@@ -328,6 +323,30 @@
                 </plugins>
             </build>
 
+            <modules>
+                <module>parent-boot-1</module>
+                <module>parent-boot-2</module>
+                <module>parent-java</module>
+
+
+                <module>annotations</module>
+
+
+
+                <!-- <module>ethereum</module> --> <!-- JAVA-6001 -->
+
+                <!-- <module>gradle</module> --> <!-- Not a maven project -->
+                <!-- <module>gradle-5</module> --> <!-- Not a maven project -->
+                <!-- <module>gradle-6</module> --> <!-- Not a maven project -->
+                <!-- <module>grails</module> --> <!-- Not a maven project -->
+                <module>gson</module>
+
+                <!-- <module>java-ee-8-security-api</module> --> <!-- long running -->
+
+
+                <module>java-numbers</module>
+                <module>json-path</module>
+            </modules>
 
         </profile>
 
@@ -364,6 +383,12 @@
                 </plugins>
             </build>
 
+            <modules>
+                <module>parent-boot-1</module>
+                <module>parent-boot-2</module>
+                <module>parent-java</module>
+
+            </modules>
 
         </profile>
 
@@ -397,6 +422,13 @@
                 </plugins>
             </build>
 
+            <modules>
+                <module>parent-boot-1</module>
+                <module>parent-boot-2</module>
+                <module>parent-java</module>
+
+
+            </modules>
         </profile>
 
         <profile>
@@ -423,6 +455,23 @@
                     </plugin>
                 </plugins>
             </build>
+
+            <modules>
+                <module>parent-boot-1</module>
+                <module>parent-boot-2</module>
+                <module>parent-java</module>
+
+
+
+                <module>annotations</module>
+
+
+                <!-- <module>ethereum</module> --> <!-- JAVA-6001 -->
+
+                <module>gson</module>
+                <module>java-numbers</module>
+                <module>json-path</module>
+            </modules>
 
         </profile>
 
@@ -453,6 +502,8 @@
 
             <modules>
                 <module>parent-boot-1</module>
+                <module>parent-boot-2</module>
+                <module>parent-java</module>
             </modules>
 
         </profile>
@@ -478,6 +529,12 @@
                     </plugin>
                 </plugins>
             </build>
+
+            <modules>
+                <module>parent-boot-1</module>
+                <module>parent-boot-2</module>
+                <module>parent-java</module>
+            </modules>
 
         </profile>
 
@@ -511,60 +568,6 @@
 
         </profile>
 
-        <profile>
-            <id>default-jdk9-and-above</id>
-
-            <build>
-                <plugins>
-
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-surefire-plugin</artifactId>
-                        <configuration>
-                            <forkCount>3</forkCount>
-                            <reuseForks>true</reuseForks>
-                            <includes>
-                                <include>SpringContextTest</include>
-                                <include>**/*UnitTest</include>
-                            </includes>
-                            <excludes>
-                                <exclude>**/*IntegrationTest.java</exclude>
-                                <exclude>**/*IntTest.java</exclude>
-                                <exclude>**/*LongRunningUnitTest.java</exclude>
-                                <exclude>**/*ManualTest.java</exclude>
-                                <exclude>**/JdbcTest.java</exclude>
-                                <exclude>**/*LiveTest.java</exclude>
-                            </excludes>
-                        </configuration>
-                    </plugin>
-
-                </plugins>
-            </build>
-        </profile>
-
-        <profile>
-            <id>integration-jdk9-and-above</id>
-
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-surefire-plugin</artifactId>
-                        <configuration>
-                            <excludes>
-                                <exclude>**/*ManualTest.java</exclude>
-                                <exclude>**/*LiveTest.java</exclude>
-                            </excludes>
-                            <includes>
-                                <include>**/*IntegrationTest.java</include>
-                                <include>**/*IntTest.java</include>
-                            </includes>
-                        </configuration>
-                    </plugin>
-                </plugins>
-            </build>
-
-        </profile>
     </profiles>
 
     <reporting>
@@ -592,7 +595,7 @@
         <assertj.version>3.21.0</assertj.version>
         <hamcrest.version>2.2</hamcrest.version>
         <hamcrest-all.version>1.3</hamcrest-all.version>
-        <mockito.version>4.1.0</mockito.version>
+        <mockito.version>4.4.0</mockito.version>
         <byte-buddy.version>1.11.20</byte-buddy.version>
 
         <!-- logging -->
